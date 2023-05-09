@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="shortcut icon" href="/static/picture/favicon.png" type="image/x-icon">
+    <title>聊天室</title>
+
+    <link href="/static/css/css2.css" rel="stylesheet">
+    <link href="/static/css/css21.css" rel="stylesheet">
+    <link href="/static/css/css22.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/scrollbar.css">
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+</head>
+<body>
+
+<!-- 加载动画-->
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
+    <div class="page-body-wrapper">
+        <div class="page-body" style="height: 100vh;margin: 0">
+            <div class="container-fluid">
+                <div class="page-title">
+                </div>
+            </div>
+            <!--聊天区-->
+            <div class="container-fluid">
+                <div class="row" style="justify-content: center">
+                    <div class="col call-chat-sidebar">
+                        <div class="card">
+                            <div class="card-body chat-body">
+                                <div class="chat-box">
+                                    <!-- Chat left side Start-->
+                                    <div class="chat-left-aside">
+                                        <div class="d-flex">
+                                            <img class="rounded-circle user-image" th:src="${loginUser.avatarUrl}">
+                                            <div class="flex-grow-1">
+                                                <input type="hidden" id="login-user-id" th:value="${loginUser.id}">
+                                                <div class="about"><span  class="name f-w-600" th:text="${loginUser.username}">登录用户昵称</span></div>
+                                            </div>
+                                        </div>
+                                        <!--用户列表-->
+                                        <div class="people-list" id="people-list">
+                                            <hr/>
+                                            <ul class="list custom-scrollbar" id="chat-user-list">
+                                                <li class="clearfix">
+                                                    <div class="d-flex">
+                                                        <img class="rounded-circle user-image" src="assets/picture/1.jpg">
+                                                        <div class="flex-grow-1">
+                                                            <div class="about"><span class="name" onclick="open_chat(user)">ming</span></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col call-chat-body fade" style="max-width: 700px">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="row chat-box">
+                                    <!-- Chat right side start-->
+                                    <div class="col chat-right-aside">
+                                        <!-- chat start-->
+                                        <div class="chat">
+                                            <!-- chat-header start-->
+                                            <div class="d-flex chat-header clearfix">
+                                                <img id="to-user-avatar" class="rounded-circle" src="/static/image/avatar/avatar-1.png">
+                                                <div class="flex-grow-1">
+                                                    <div class="about">
+                                                        <span class="name" id="to-user-name">用户昵称</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--聊天记录-->
+                                            <div class="chat-history chat-msg-box custom-scrollbar">
+                                                <ul id="chat-note"></ul>
+                                            </div>
+                                            <!-- 输入框-->
+                                            <div class="chat-message clearfix">
+                                                <div class="row">
+                                                    <div class="col-xl-12 d-flex">
+                                                        <div class="input-group text-box">
+                                                            <input class="form-control input-txt-bx"
+                                                                   id="message-to-send" type="text"
+                                                                   name="message-to-send"
+                                                                   placeholder="输入信息">
+                                                            <button id="send-message" class="btn btn-primary input-group-text"
+                                                                    type="button">发送
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Container-fluid Ends-->
+        </div>
+
+    </div>
+</div>
+<!-- latest jquery-->
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+
+<!-- feather icon js-->
+
+<script src="/static/js/simplebar.min.js"></script>
+<script src="/static/js/custom.js"></script>
+<!-- Sidebar jquery-->
+<script src="/static/js/config.js"></script>
+
+<!-- Theme js-->
+<script src="/static/js/script.js"></script>
+<script src="/static/custom/chat.js"></script>
+
+</body>
+</html>
