@@ -38,8 +38,6 @@ public class ChatEndPoint {
      */
     @OnOpen
     public void onOpen(Session session, EndpointConfig config) {
-
-
         //将局部Session对象赋值给成员session
         this.session = session;
         //获取httpSession对象

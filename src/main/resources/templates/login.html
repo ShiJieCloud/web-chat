@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="/static/picture/favicon.png" type="image/x-icon">
     <title>聊天室</title>
     <!-- Google font-->
@@ -21,44 +21,45 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
-  </head>
-  <body>
-    <!-- Loader starts-->
-    <div class="loader-wrapper">
-      <div class="loader"></div>
-    </div>
-    <!-- Loader ends-->
-    <!-- login page start-->
-    <div class="container-fluid p-0">
-      <div class="row m-0">
-        <div class="col-12 p-0">    
-          <div class="login-card">
-            <div>
-              <div><a class="logo" href="/"><img class="img-fluid for-light" src="/static/picture/favicon.png" alt="logo image"></a></div>
-              <div class="login-main"> 
-                <form class="theme-form" action="/chat" method="post">
-                  <h2 class="text-center">聊天室</h2>
-                  <p class="text-center">我们一起聊天吧</p>
-                  <div class="form-group">
-                    <input class="form-control" type="text" name="username" placeholder="请输入自定义昵称" required>
-                  </div>
-                  <div class="form-group mb-0">
-                    <div class="text-end mt-3">
-                      <button class="btn btn-primary btn-block w-100" type="submit">进入聊天室</button>
+</head>
+<body>
+<!-- Loader starts-->
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+<!-- Loader ends-->
+<!-- login page start-->
+<div class="container-fluid p-0">
+    <div class="row m-0">
+        <div class="col-12 p-0">
+            <div class="login-card">
+                <div>
+                    <div><a class="logo" href="/">
+                      <img class="img-fluid for-light" src="/static/picture/favicon.png"></a></div>
+                    <div class="login-main">
+                        <form class="theme-form" action="/chat" method="post">
+                            <h2 class="text-center">聊天室</h2>
+                            <p class="text-center">我们一起聊天吧</p>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="username" placeholder="请输入自定义昵称" required>
+                            </div>
+                            <div class="form-group mb-0">
+                                <div class="text-end mt-3">
+                                    <button class="btn btn-primary btn-block w-100" type="submit">进入聊天室</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                </form>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!-- latest jquery-->
-      <script src="/static/js/jquery-3.6.0.min.js"></script>
-      <!-- Sidebar jquery-->
-      <script src="/static/js/config.js"></script>
-      <!-- Theme js-->
-      <script src="/static/js/script.js"></script>
     </div>
-  </body>
+    <!-- latest jquery-->
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="/static/js/config.js"></script>
+    <!-- Theme js-->
+    <script src="/static/js/script.js"></script>
+</div>
+</body>
 </html>
