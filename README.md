@@ -8,9 +8,9 @@
 
 GitHub：[https://github.com/ShiJieCloud/web-chat](https://github.com/ShiJieCloud/web-chat)
 
-Gitee：
+Gitee：[https://gitee.com/suitbaby/web-chat](https://gitee.com/suitbaby/web-chat)
 
-GitCode：
+GitCode：[I'm Jie / web-chat · GitCode](https://gitcode.net/qq_20185737/web-chat)
 
 ## 教程地址
 
