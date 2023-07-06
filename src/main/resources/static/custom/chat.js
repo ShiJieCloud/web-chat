@@ -66,7 +66,6 @@ ws.onmessage = function (e) {
            chatData=str;
         }
         sessionStorage.setItem(fromUserId,chatData);
-
     }
 
 }
