@@ -49,7 +49,6 @@ ws.onmessage = function (e) {
         }
     } else {
         //不是系统消息
-
         let fromUserId = res.fromUserId;
         let message = res.message;
 
