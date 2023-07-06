@@ -72,7 +72,6 @@ ws.onmessage = function (e) {
 ws.onclose = function () {
 
     //连接关闭之后的操作
-
 }
 
 $('#send-message').click(function () {
