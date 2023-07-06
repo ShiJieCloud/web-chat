@@ -22,7 +22,6 @@ ws.onmessage = function (e) {
     //判断是否是系统消息
     if (res.system) {
         //系统消息
-
         //同步在线用户列表
         let message = res.message;
         if (res.status) {
